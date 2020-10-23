@@ -1,0 +1,76 @@
+!SESSION 2020-10-23 12:46:35.315 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.fullversion=1.8.0_242-b08
+JRE 1.8.0 Windows 8 amd64-64-Bit Compressed References 20200122_564 (JIT enabled, AOT enabled)
+OpenJ9   - 51a5857d2
+OMR      - 7a1b0239a
+JCL      - 8cf8a30581 based on jdk8u242-b08
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-10-23 12:47:19.282
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Abhishek'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-10-23 12:47:25.056
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:821)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.jface.text 2 0 2020-10-23 12:49:29.053
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-10-23 12:49:29.069
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-10-23 12:49:29.275
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2020-10-23 12:49:29.275
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-10-23 12:56:06.239
+!MESSAGE An internal error occurred during: "Launching testing".
+!STACK 0
+java.lang.AbstractMethodError: org/testng/eclipse/launch/ITestNGLaunchConfigurationProvider.getClasspath(Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/util/List;
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.getClasspath(TestNGLaunchConfigurationDelegate.java:350)
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.createVMRunner(TestNGLaunchConfigurationDelegate.java:192)
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.launchTypes(TestNGLaunchConfigurationDelegate.java:157)
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.launch(TestNGLaunchConfigurationDelegate.java:91)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-10-23 12:56:19.144
+!MESSAGE An internal error occurred during: "Launching testing".
+!STACK 0
+java.lang.AbstractMethodError: org/testng/eclipse/launch/ITestNGLaunchConfigurationProvider.getClasspath(Lorg/eclipse/debug/core/ILaunchConfiguration;)Ljava/util/List;
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.getClasspath(TestNGLaunchConfigurationDelegate.java:350)
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.createVMRunner(TestNGLaunchConfigurationDelegate.java:192)
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.launchTypes(TestNGLaunchConfigurationDelegate.java:157)
+	at org.testng.eclipse.launch.TestNGLaunchConfigurationDelegate.launch(TestNGLaunchConfigurationDelegate.java:91)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
